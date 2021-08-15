@@ -14,10 +14,10 @@ pipeline
     {
         buildDiscarder(logRotator(numToKeepStr: '3'))
     }
-    parameters
-    {
-        choice(name: 'DEPLOY-ENV', choices: ['UAT1', 'UAT2', 'UAT3'], description: 'SELECT THE ENV')
-    }   
+  //  parameters
+    //{
+      //  choice(name: 'DEPLOY-ENV', choices: ['UAT1', 'UAT2', 'UAT3'], description: 'SELECT THE ENV')
+    //}   
     stages
      {
         stage('compile')
